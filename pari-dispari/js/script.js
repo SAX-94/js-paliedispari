@@ -1,6 +1,6 @@
 /* // L’utente sceglie pari o dispari, e io converto la stringa da lui
 inserita in lowercase, per semplificare la successiva verifica. */
-const parioDisp = (prompt("Scegli pari o dispari")).toLowerCase();
+let parioDisp = (prompt("Scegli pari o dispari")).toLowerCase();
 
 do {
     parioDisp = (prompt("Scegli pari o dispari")).toLowerCase();
