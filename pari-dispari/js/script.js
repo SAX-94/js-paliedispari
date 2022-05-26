@@ -1,8 +1,8 @@
 /* // L’utente sceglie pari o dispari, e io converto la stringa da lui
 inserita in lowercase, per semplificare la successiva verifica. */
 let parioDisp = (prompt("Scegli pari o dispari")).toLowerCase();
-// @ts-ignore
-if (parioDisp != "pari" || parioDisp != "dispari") {
+
+if (parioDisp != "pari" && parioDisp != "dispari") {
     alert("Devi inserire un valore valido. Pari o Dispari.")
 }
 console.log(parioDisp);
@@ -14,9 +14,25 @@ if (numIns < 1 || numIns > 5 || isNaN(numIns)) {
     alert("Devi inserire un numero valido");
 }
 
+// Genero un numero random da 1 a 5
+let numRandom = Math.floor(Math.random() * 5);
+console.log(numRandom);
 
+let somma = numIns + numRandom
 
+// Creo la funzione che verifica se la somma è pari
+function sommaPoD () {
+    somma % 2;
+}
 
+/* Dichiariamo chi ha vinto. Se l’utente aveva scelto pari e 
+la somma è pari, ha vinto l’utente, altrimenti il computer. */
+
+if (parioDisp == "pari" && somma % 2 == 0) {
+    alert("Hai vinto!")
+} else {
+    alert("Hai perso!")
+}
 
 /* 
 
@@ -26,7 +42,6 @@ let numIns = parseInt(prompt("Inseirsci un numero da 1 a 5"));
 
 // Genero un numero random da 1 a 5
 let numRandom = Math.floor(Math.random() * 5);
-// Questa è la funzione  che fa la medesima cosa
 
 let somma = numIns + numRandom;
 
