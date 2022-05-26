@@ -1,6 +1,10 @@
 /* // L’utente sceglie pari o dispari, e io converto la stringa da lui
 inserita in lowercase, per semplificare la successiva verifica. */
 let parioDisp = (prompt("Scegli pari o dispari")).toLowerCase();
+// @ts-ignore
+if (parioDisp != "pari" || parioDisp != "dispari") {
+    alert("Devi inserire un valore valido. Pari o Dispari.")
+}
 console.log(parioDisp);
 
 // L'utente inserisce un numero da 1 a 5
