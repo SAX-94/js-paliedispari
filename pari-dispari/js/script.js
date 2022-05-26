@@ -2,6 +2,10 @@
 inserita in lowercase, per semplificare la successiva verifica. */
 const parioDisp = (prompt("Scegli pari o dispari")).toLowerCase();
 
+do {
+    parioDisp = (prompt("Scegli pari o dispari")).toLowerCase();
+} while (parioDisp != "pari" && parioDisp != "dispari")
+
 if (parioDisp != "pari" && parioDisp != "dispari") {
     alert("Devi inserire un valore valido. Pari o Dispari.")
 }
