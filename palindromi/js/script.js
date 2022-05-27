@@ -26,3 +26,5 @@ function invertiParola(str){
     let strInversa = str.split("").reverse().join("");
     return strInversa;
 }
+/* Questa funzione prende una stringa e dà come risultato
+una stringa con le lettere in ordine invertito */
